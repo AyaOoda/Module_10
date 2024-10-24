@@ -1,0 +1,304 @@
+a {
+	text-decoration: none; 
+	color: #fff; 
+}
+.menu{
+  padding: 0px;
+}
+.navbar {
+	list-style: none; 
+  padding: 0;
+  background:#bfaeae;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  position:absolute;
+}
+
+.navbar li {
+	position: relative;
+	display: inline-block; 
+	padding: 15px 20px; 
+	font: bold 12px/18px sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.menu .navbar  li:hover {
+  background: #c3ccd1;
+}
+
+
+.logo img {
+  width: 120px; 
+  height: auto; 
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+.top{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 40px;  
+ 
+}
+
+.leftimage {
+
+  width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: top;
+    align-items: top;
+}
+
+
+.leftimage img {
+
+  margin-left: -20px;
+
+
+  width: 100%;
+
+    object-fit: contain;
+    object-position: left; /* Make sure the image stays aligned to the left */
+
+  
+}
+
+.rightinfo{
+  margin-top: 70px;
+}
+
+h1{
+  font-family: "nunito", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+font-size: 70px;
+}
+
+h2{
+  font-family: "nunito", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+font-size: 30px;
+}
+
+.subheading{
+  margin-top: -30px;
+}
+
+p{
+  font-family: "margot", sans-serif;
+font-weight: 400;
+font-style: normal;
+line-height: 2.5rem;
+font-size: 18px;
+}
+
+header{
+  background:#bfaeae;
+
+}
+
+button{
+  border-radius: 5px;
+
+  background-color: #bfaeae;
+  font-family: "nunito", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+font-size: 18px;
+padding: 5px;
+
+}
+
+button a{
+  color: #000000;
+}
+
+button:hover{
+  background-color: #ddc7c7;
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: .5fr 3fr;
+  height: 100vh;
+}
+
+
+.sidebar {
+  background-color: #f4f4f4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.profile img {
+  width: 200px;
+  height: 100%;
+  display: block;
+  margin: 0;
+  margin-bottom: 0px;
+}
+
+.links-section{
+  margin-top: -50px;
+  
+}
+
+.links-section h3 {
+  margin-bottom: 10px;
+  font-family: "nunito", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+font-size: 15px;
+}
+
+.links-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links-section ul li  {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.links-section ul li  {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  margin-bottom: 10px;
+  font-family: "nunito", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+font-size: 12px;
+}
+
+.links-section ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  margin-bottom: 10px;
+  font-family: "nunito", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+font-size: 12px;
+}
+
+.links-section ul li a:hover {
+  color: #007BFF;
+}
+
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.project-item {
+  background-color: #ddd;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  height: 350px;
+
+}
+.project-item img{
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+}
+
+.footer {
+  background-color: #bfaeae;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+
+
+  
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .top{
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    height: auto;
+  }
+
+  .leftimage {
+    width: 100%;
+}
+
+.leftimage img {
+    height: auto;
+}
+
+.rightinfo {
+    padding: 20px;
+    margin-top: 0;
+}
+
+
+
+  .container {
+      grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+  .projects-grid {
+      grid-template-columns: 1fr;
+  }
+
+  h1{
+    font-size: 35px;
+
+  }
+  .subheading{
+    margin-top: 20px;
+  }
+  p{
+    font-size: 15px;
+  }
+.rightinfo{
+  margin-top: -30px;
+}
+.top{
+  margin-top: 80px;
+}
+}
